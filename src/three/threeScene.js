@@ -66,19 +66,14 @@ function animate() {
 
 const rgbeLoader = new RGBELoader();
 
-rgbeLoader.load(
-    "/hdr/royal.hdr",
-    (texture) => {
-        console.log("HDR Loaded");
+rgbeLoader.load("/hdr/royal.hdr", (texture) => {
+    texture.mapping = THREE.EquirectangularReflectionMapping;
 
-        texture.mapping = THREE.EquirectangularReflectionMapping;
-        scene.environment = texture;
-    },
-    undefined,
-    (err) => {
-        console.error(err);
-    }
-);
+    scene.environment = texture;
+
+    // Temporary test
+    scene.background = texture;
+});
 
 animate();
 

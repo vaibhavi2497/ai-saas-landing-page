@@ -11,9 +11,9 @@ const material = new THREE.MeshPhysicalMaterial({
     roughness: 0,
     metalness: 0,
 
-    thickness: 2,
+    thickness: 1,
 
-    ior: 1.5,               // Glass ≈ 1.45–1.52
+    ior: 1.52,               // Glass ≈ 1.45–1.52
 
     clearcoat: 1,
     clearcoatRoughness: 0,

@@ -63,9 +63,6 @@ function animate() {
     composer.render();
 }
 
-
-const rgbeLoader = new RGBELoader();
-
 const rgbeLoader = new RGBELoader();
 
 rgbeLoader.load(

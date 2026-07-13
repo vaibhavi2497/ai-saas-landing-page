@@ -71,8 +71,8 @@ rgbeLoader.load("/hdr/royal.hdr", (texture) => {
 
     scene.environment = texture;
 
-    // Optional:
-    // scene.background = texture;
+    // Temporary test
+    scene.background = texture;
 });
 
 animate();
